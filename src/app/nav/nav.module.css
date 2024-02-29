@@ -1,0 +1,56 @@
+.image {
+    cursor: pointer;
+    width: 21.5rem;
+    height: 25.8125rem;
+
+}
+
+
+
+@keyframes slide-up {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.backdrop {
+    cursor: pointer;
+    animation: slide-up 1000ms ease-in-out 1 forwards;
+    animation-play-state: paused;
+}
+
+.image:hover, .backdrop:hover {
+    animation-play-state: running;
+}
+
+
+/* @keyframes slide-up {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.backdrop {
+    cursor: pointer;
+    animation: slide-up 1000ms ease-in-out 1 forwards;
+    animation-play-state: paused;
+}
+
+.backdrop:hover {
+    animation-name: slide-up;
+    animation-play-state: running;
+}
+
+.image {
+    width: 21.5rem;
+    height: 25.8125rem;
+    cursor: pointer;
+    animation: slide-up 1000ms ease-in-out 1 forwards;
+    animation-play-state: paused;
+}
+
+.image:hover {
+ animation-name: slide-up;
+ animation-play-state: running;
+}
+     */

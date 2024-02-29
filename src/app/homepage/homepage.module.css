@@ -1,0 +1,107 @@
+@keyframes slide_in{
+
+    100% {
+       position: relative;
+        right: 0rem;
+
+    }
+}
+
+@keyframes slide_in_left{
+
+    100% {
+        right: 0rem;
+
+    }
+}
+
+@keyframes appear {
+    100%{
+        opacity: 1;
+
+    }
+    
+}
+
+
+
+.slideAnimate {
+    animation: slide_in 1500ms ease-in-out 600ms 1 forwards ;
+}
+
+.popOut {
+    animation: appear 600ms ease-in-out 1800ms 1 forwards ;
+}
+
+/* for projects h1 */
+.slideAnimate2 {
+    animation: slide_in 1000ms linear 200ms 1 forwards ;
+
+}
+
+.popOut2 {
+    animation: appear 1000ms ease-in-out 100ms 1 forwards ;
+}
+
+.slideAnimate3 {
+    animation: slide_in_left 800ms linear 100ms 1 forwards ;
+
+}
+
+
+/* for part one two and three */
+
+
+
+
+/* 
+
+@keyframes slide_in{
+
+    100% {
+       position: relative;
+        right: 0rem;
+
+    }
+}
+
+@keyframes slide_in_left{
+
+    100% {
+       position: relative;
+        left: 0rem;
+
+    }
+}
+
+@keyframes appear {
+    100%{
+        opacity: 1;
+
+    }
+    
+}
+
+
+
+.slideAnimate {
+    animation: slide_in 1500ms ease-in-out 600ms 1 forwards ;
+}
+
+.popOut {
+    animation: appear 600ms ease-in-out 1800ms 1 forwards ;
+}
+
+.slideAnimate2 {
+    animation: slide_in 1000ms linear 200ms 1 forwards ;
+
+}
+
+.popOut2 {
+    animation: appear 300ms ease-in-out 100ms 1 forwards ;
+}
+
+.slideAnimate3 {
+    animation: slide_in_left 800ms linear 100ms 1 forwards ;
+
+} */

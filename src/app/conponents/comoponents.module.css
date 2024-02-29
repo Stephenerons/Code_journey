@@ -1,0 +1,77 @@
+
+.border1 {
+    opacity: 0;
+}
+
+.border2 {
+    opacity: 0;
+}
+
+.border3 {
+    opacity: 0;
+}
+
+.border4 {
+    opacity: 1;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.box:hover .border1 {
+    opacity: 1;
+    position: absolute;
+    top: -1px;
+    transition: all 800ms ease-in-out;
+}
+
+.box:hover .border2 {
+    opacity: 1;
+    position: absolute;
+    right: 38px;
+    transform: rotate(-90deg);
+    transform-origin: 0 50%;
+    transform: rotate(-90deg);
+    transition: all 800ms ease-in-out;
+}
+
+.box:hover .border3 {
+    opacity: 1;
+    position: absolute;
+    left: 38px;
+    transform: rotate(90deg);
+    transform-origin: 100% 50%;
+    transform: rotate(90deg);
+    transition: all 800ms ease-in-out;
+}
+
+.box:hover .border4 {
+    opacity: 1;
+    position: absolute;
+    transition: all 800ms ease-in-out;
+}
+
+
+.btn{
+    width: 1.75rem;
+}
+
+
+.btn .bar:first-child {
+    transform: translateY(12.5px) rotate(45deg);
+    transition: .8s;
+}      
+
+.btn .bar:nth-child(2) {
+opacity: 0;
+transition: .8s;
+}
+
+.btn .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+    transition: .8s;
+}
