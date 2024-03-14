@@ -1,3 +1,11 @@
+@keyframes slide-up {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
 .image {
     cursor: pointer;
     width: 21.5rem;
@@ -5,21 +13,14 @@
 
 }
 
-
-
-@keyframes slide-up {
-    100% {
-        transform: translateY(0);
-    }
-}
-
 .backdrop {
     cursor: pointer;
-    animation: slide-up 1000ms ease-in-out 1 forwards;
+    animation: slide-up 1000ms ease-in-out 1 normal;
     animation-play-state: paused;
 }
 
-.image:hover, .backdrop:hover {
+.image:hover + .backdrop,
+.backdrop:hover {
     animation-play-state: running;
 }
 

@@ -1,6 +1,6 @@
 "use client"
 import React, {useState, useEffect } from 'react'
-import projects from '../conponents/projects_homepage'
+import projects from '../conponents/projects'
 import Image from 'next/image'
 import Link from 'next/link'
 import style from './homepage.module.css'
@@ -29,9 +29,9 @@ export default function Homepage() {
   const scrollSix = scrollY > 100 ? style.slideAnimate3 : '';
   const scrollSeven = scrollY > 100 ? style.slideAnimate7 : '';
 
-const cards = projects.map((card) => (
+const cards = projects.slice(0 , 3).map((card) => (
 
-<Link href= {`/homepage/${card.project_title.split(' ').join('-')}`}>
+<Link key={card.id} href= {`/homepage/${card.project_title.split(' ').join('-')}`}>
   <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}

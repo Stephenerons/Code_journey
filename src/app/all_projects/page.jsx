@@ -1,9 +1,6 @@
 "use client"
 import React , {useState} from 'react'
 import projects from '../conponents/projects'
-import frontendProjects from '../conponents/frontendProjects'
-import backendProjects from '../conponents/backendProjects'
-import designs from '../conponents/designs'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Link from 'next/link'
 
@@ -17,8 +14,10 @@ export default function Projects() {
     setActiveStyling(item === activeStyling ? null : item);
   };
 
-  const frontEnd = frontendProjects.map((front) => (
- <Link href={`/all_projects/${front.project_title.split(' ').join('-')}`}>
+  const filteredFrontend = projects.filter( project => project.major_category === 'Frontend')
+  
+  const frontEnd = filteredFrontend.map((front) => (
+ <Link key={front.id} href={`/all_projects/${front.project_title.split(' ').join('-')}`}>
 <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
@@ -102,9 +101,11 @@ export default function Projects() {
   </Link>
   ))
 
-  const backEnd = backendProjects.map((back) => (
+ const filteredBackend = projects.filter( backend => backend.major_category === 'Backend' )
 
-<Link href={`/all_projects/${back.project_title.split(' ').join('-')}`}>
+  const backEnd = filteredBackend.map((back) => (
+
+<Link key={back.id} href={`/all_projects/${back.project_title.split(' ').join('-')}`}>
 <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
@@ -188,9 +189,11 @@ export default function Projects() {
   </Link>
   ))
 
-  const products = designs.map((product) => (
+ const filteredFullStack = projects.filter(product => product.major_category === 'Fullstack')
 
-<Link  href={`/all_projects/${product.project_title.split(' ').join('-')}`}> 
+  const fullstack = filteredFullStack.map((product) => (
+
+<Link key={product.id} href={`/all_projects/${product.project_title.split(' ').join('-')}`}> 
 <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
@@ -276,8 +279,8 @@ export default function Projects() {
 
   const allCards = projects.map((single) => (
 
-<article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
-  <Link href={`/all_projects/${single.project_title.split(' ').join('-')}`}>
+<article key={single.id} className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
+  <Link  href={`/all_projects/${single.project_title.split(' ').join('-')}`}>
 
 {/* image hero start */}
 <div className={`md:bg-home bg-home md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:h-48 h-40 md:w-[21.5rem] md:rounded-t-lg rounded-t-lg md:bg-black`}>
@@ -361,7 +364,7 @@ export default function Projects() {
   ))
 
 
-  return (
+  return (  
     <main>
     <section>
       <div className={`md:bg-projects bg-projects bg-no-repeat bg-cover w-full h-80 md:bg-no-repeat md:bg-cover md:w-full md:h-[32.3125rem] md:rounded-b-2xl ` }>
@@ -379,7 +382,7 @@ export default function Projects() {
                     </h1>
 
                     <p className="md:w-[33rem] md:text-white md:text-base md:font-medium w-60 text-white text-sm font-normal  ">
-                    Discover my work organized into distinct categories, each offering a unique glimpse into my skills and capabilities. Whether you're interested in web development, mobile apps, design, or other specialized fields, you'll find a curated selection of projects that demonstrate my commitment to excellence and innovation.
+                    Discover my work organized into distinct categories, each offering a unique glimpse into my skills and capabilities. Whether you&apos;re interested in web development, mobile apps, design, or other specialized fields, you&apos;ll find a curated selection of projects that demonstrate my commitment to excellence and innovation.
                     </p>
                 </div>
 
@@ -429,10 +432,10 @@ export default function Projects() {
   </button>
         
   <button
-    onClick={() => { setCurrentState('Designs'); activeState('Designs'); }}
+    onClick={() => { setCurrentState('Fullstack'); activeState('Fullstack'); }}
     className={activeStyling !== 'Designs' ? 'w-fit  h-8 p-2 bg-zinc-300 rounded-md flex justify-center items-center gap-2  md:w-fit md:h-10 md:p-2.5 md:bg-zinc-300 md:rounded-lg md:justify-center md:items-center md:gap-2.5 md:hover:shadow-buttons' : 'w-fit h-8 p-2 bg-slate-400 rounded-md flex justify-center items-center gap-2 md:w-fit md:h-10 md:p-2.5 md:bg-slate-400 md:hover:bg-slate-400 md:rounded-lg md:justify-center md:items-center md:gap-2.5 md:shadow-buttons'}
   >
-    <p className=' text-stone-50 text-xs font-normal md:text-center md:text-white md:text-base md:hover:text-white  md:font-normal'>Designs</p>
+    <p className=' text-stone-50 text-xs font-normal md:text-center md:text-white md:text-base md:hover:text-white  md:font-normal'>Fullstack</p>
   </button>
 
       </div>
@@ -443,7 +446,7 @@ export default function Projects() {
         {currentState === 'All' ? allCards :
          currentState === 'Frontend' ? frontEnd :
          currentState === 'Backend' ? backEnd :
-         currentState === 'Designs' ? products : null
+         currentState === 'Fullstack' ? fullstack : null
         }
       </div>
 {/* cards ends */}

@@ -3,7 +3,7 @@ import style from './nav.module.css';
 
 export default function Page() {
     return (
-        <main className='md:w-screen md:h-screen md:bg-white'>
+        <main className='md:w-screen md:h-screen md:bg-white md:overflow-hidden'>
             <article className='md:relative md:overflow-hidden'>
                 {/* card image start */}
                 <div className={`md:absolute md:h-[25.8125rem] md:w-[21.5rem] md:bg-card md:bg-no-repeat md:bg-cover md:rounded-lg ${style.image}`}>
@@ -11,7 +11,7 @@ export default function Page() {
                 {/* card image stop */}
 
                 {/* backdrop start */}
-                <div className={`md:h-[25.8125rem] md:w-[21.5rem] bg-black relative opacity-70 translate-y-full ${style.backdrop}`}>
+                <div className={` md:h-[25.8125rem] md:w-[21.5rem] bg-black relative opacity-70 md:translate-y-full ${style.backdrop} `}>
                 </div>
                 {/* backdrop stop */}
 

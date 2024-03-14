@@ -28,7 +28,7 @@ export default function About() {
         <div className='md:w-1/2 mx-4 text-center '>
             <div className='mt-8 '>
                 <h2 className=' md:text-teal-300 md:text-3xl md:font-medium text-teal-300 text-xl font-medium '>About Me</h2>
-                <p className='md:text-black md:text-base md:font-light md:mt-4 text-black text-xs font-light'>Hey there! I'm Eromosele, a versatile full-stack developer with a knack for crafting seamless digital experiences from concept to execution. With a fusion of frontend finesse, backend wizardry, and a keen eye for product design, I thrive on translating ideas into intuitive, impactful solutions.</p>
+                <p className='md:text-black md:text-base md:font-light md:mt-4 text-black text-xs font-light'>Hey there! I&apos;m Eromosele, a versatile full-stack developer with a knack for crafting seamless digital experiences from concept to execution. With a fusion of frontend finesse, backend wizardry, and a keen eye for product design, I thrive on translating ideas into intuitive, impactful solutions.</p>
             </div>
 
         {/* image start small screen */}
@@ -51,11 +51,11 @@ export default function About() {
             
             <div className=' md:mt-8 mt-8'>
                 <h2 className=' md:text-zinc-900 md:text-3xl md:font-medium text-zinc-900 text-xl font-medium '>My Journey</h2>
-                <p className='md:font-light md:text-black md:text-base md:mt-4 text-black text-xs font-light mt-4 '>My journey into the world of tech began with an insatiable curiosity for coding and design. Over the years, I've honed my skills in both frontend and backend development while delving deep into the nuances of product design. Each step has been a leap towards creating holistic digital experiences.</p>
+                <p className='md:font-light md:text-black md:text-base md:mt-4 text-black text-xs font-light mt-4 '>My journey into the world of tech began with an insatiable curiosity for coding and design. Over the years, I&apos;ve honed my skills in both frontend and backend development while delving deep into the nuances of product design. Each step has been a leap towards creating holistic digital experiences.</p>
             </div>
             <div className=' md:mt-8 md:mb-[6.12rem] mt-8 mb-16'>
-                <h2 className=' md:text-black md:text-3xl md:font-medium  text-black text-xl font-medium'>Lets Create Together</h2>
-                <p className='md:font-light md:mt-4 text-black text-base font-light mt-4 '>Whether you're seeking a comprehensive solution spanning frontend development, backend infrastructure, or a captivating product design, I'm eager to collaborate and bring innovative ideas to life. Let's embark on a journey to craft extraordinary digital experiences!</p>
+                <h2 className=' md:text-black md:text-3xl md:font-medium  text-black text-xl font-medium'>Let&apos;s Create Together</h2>
+                <p className='md:font-light md:mt-4 text-black text-base font-light mt-4 '>Whether you&apos;re seeking a comprehensive solution spanning frontend development, backend infrastructure, or a captivating product design, I&apos;m eager to collaborate and bring innovative ideas to life. Let&apos;s embark on a journey to craft extraordinary digital experiences!</p>
             </div>
         </div>
         </div>

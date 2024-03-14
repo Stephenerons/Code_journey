@@ -4,6 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 export default function Footer() {
@@ -18,7 +19,7 @@ export default function Footer() {
       <div className='md:flex md:justify-between md:items-center md:mx-[6.25rem] mx-4 md:mb-10'>
          <Link href='../homepage'>
             <div>
-                <img width={54} height={57} src="/code_journey 1.svg" alt="" />
+                <Image width={54} height={57} src="/code_journey 1.svg" alt=''/>
             </div>
          </Link>
 
@@ -124,7 +125,7 @@ export default function Footer() {
 <div className='md:flex md:justify-between md:items-center md:mx-[6.25rem] mx-4 md:mb-10 flex justify-between items-center'>
    <Link href='../homepage'>
       <div>
-          <img width={54} height={57} src="/code_journey 1.svg" alt="" />
+          <Image width={54} height={57} src="/code_journey 1.svg" alt=""/>
       </div>
    </Link>
 
