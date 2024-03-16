@@ -2,8 +2,8 @@ import Navbar from '../conponents/Navbar'
 import Footer from '../conponents/Footer'
 
 export const metadata = {
-    title: 'Contact',
-    description: 'Reach out',
+    title: 'Home',
+    description: 'Explore my homepage',
   }
 
 

@@ -161,15 +161,15 @@ const cards = projects.slice(0 , 3).map((card) => (
 {/* main content start */}
 <section  className='md:w-full w-full h-fit  md:h-[56.93755rem] bg-stone-50 md:bg-white'>
     <div className='md:mx-auto mx-auto pt-14 md:pt-24 md:text-center text-center md:mb-16 mb-10 '>
-      <h2 className={`md:text-cyan-950 text-cyan-950 md:text-4xl text-xl md:pb-8 pb-4 md:font-semibold font-semibold relative right-[999px] ${scrollOne}`}>
+      <h2 className={`md:text-cyan-950 text-cyan-950 md:text-4xl text-xl md:pb-8 pb-4 md:font-semibold font-semibold relative right-[999px] md:${scrollOne}`}>
         Projects
       </h2>
 
-      <p className={`md:text-slate-400 text-slate-400  text-sm font-medium  md:text-2xl md:font-medium opacity-0 ${scrollTwo}`}>
+      <p className={`md:text-slate-400 text-slate-400  text-sm font-medium  md:text-2xl md:font-medium opacity-0 md:${scrollTwo}`}>
         Explore Our Impressive Projects
       </p>
 
-      <p className={`md:text-black text-center text-black text-xs font-light md:text-base md:font-normal md:mt-6 `}>Discover a diverse range of frontend and backend projects</p>
+      <p className={`md:text-black text-center text-black text-xs font-light md:text-base md:font-normal md:mt-6 mt-2`}>Discover a diverse range of frontend and backend projects</p>
     </div>
 
 {/* project cards start */}

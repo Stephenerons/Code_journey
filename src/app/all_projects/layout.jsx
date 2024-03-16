@@ -2,8 +2,8 @@ import Navbar from '../conponents/Navbar'
 import Footer from '../conponents/Footer'
 
 export const metadata = {
-    title: 'Contact',
-    description: 'Reach out',
+    title: 'All projects',
+    description: 'A list of all projects',
   }
 
 

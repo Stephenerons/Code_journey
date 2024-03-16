@@ -3,8 +3,8 @@ import Footer from '../conponents/Footer'
 import Project from './page'
 
 export const metadata = {
-    title: 'Contact',
-    description: 'Reach out',
+    title: 'About Project ',
+    description: 'Details',
   }
 
 
