@@ -81,7 +81,7 @@ export default function Test() {
       </div>
  
        {/* hamburger styling and nav links for small screens starts here  */}
-      <ul className= {toggle ? ' z-30 fixed -top-full flex flex-col justify-center items-center h-screen text-white w-full bg-gradient-to-b from-neutral-700 to-black gap-14 transition-all duration-[1000ms]' : 'fixed top-0 flex flex-col justify-center items-center h-screen text-white w-full bg-gradient-to-b from-neutral-700 to-black gap-14 -z-10 transition-all duration-[1000ms]'}>
+      <ul className= {toggle ? ' z-50 fixed -top-full flex flex-col justify-center items-center h-screen text-white w-full bg-gradient-to-b from-neutral-700 to-black gap-14 transition-all duration-[1000ms]' : 'fixed top-0 flex flex-col justify-center items-center h-screen text-white w-full bg-gradient-to-b from-neutral-700 to-black gap-14 -z-10 transition-all duration-[1000ms]'}>
 
 
         <Link href='./homepage'>
