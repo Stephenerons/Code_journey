@@ -21,7 +21,7 @@ export default function Homepage() {
     };
   }, []);
 
-  const scrollOne = scrollY > 100 ? style.slideAnimate2 : '';
+  const scrollOne = scrollY >= 100 ? style.slideAnimate2 : '';
   const scrollTwo = scrollY >= 100 ?  style.popOut2 : '';
   const scrollThree = scrollY > 100 ? style.slideAnimate3 : '';
   const scrollFour = scrollY > 100 ? style.slideAnimate2 : '';
@@ -161,11 +161,11 @@ const cards = projects.slice(0 , 3).map((card) => (
 {/* main content start */}
 <section  className='md:w-full w-full h-fit  md:h-[56.93755rem] bg-stone-50 md:bg-white'>
     <div className='md:mx-auto mx-auto pt-14 md:pt-24 md:text-center text-center md:mb-16 mb-10 '>
-      <h2 className={`md:text-cyan-950 text-cyan-950 md:text-4xl text-xl md:pb-8 pb-4 md:font-semibold font-semibold relative right-[999px] md:${scrollOne}`}>
+      <h2 className={`md:text-cyan-950 text-cyan-950 md:text-4xl text-xl md:pb-8 pb-4 md:font-semibold font-semibold relative right-[999px] ${style.slideAnimate2} `}>
         Projects
       </h2>
 
-      <p className={`md:text-slate-400 text-slate-400  text-sm font-medium  md:text-2xl md:font-medium opacity-0 ${scrollTwo}`}>
+      <p className={`md:text-slate-400 text-slate-400  text-sm font-medium  md:text-2xl md:font-medium opacity-0 ${style.popOut2}`}>
         Explore Our Impressive Projects
       </p>
 
