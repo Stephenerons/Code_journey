@@ -367,10 +367,10 @@ export default function Projects() {
   return (  
     <main>
     <section>
-      <div className={`md:bg-projects bg-projects bg-no-repeat bg-cover w-full h-80 md:bg-no-repeat md:bg-cover md:w-full md:h-[32.3125rem] md:rounded-b-2xl ` }>
+      <div className={`md:bg-projects bg-projects bg-no-repeat bg-cover w-full h-[50%] md:bg-no-repeat md:bg-cover md:w-full md:h-screen md:rounded-b-2xl ` }>
 
               {/* Background with transparent overlay starts */}
-              <div className="md:relative relative w-full h-80  md:w-full md:h-[32.3125rem] md:rounded-b-2xl">
+              <div className="md:relative relative w-full h-[50%]  md:w-full md:h-screen md:rounded-b-2xl">
                   
                   {/* Background overlay starts */}
                   <div className="md:absolute absolute md:inset-0 inset-0 md:bg-cyan-950 bg-cyan-950 opacity-20 md:opacity-20 md:rounded-b-2xl"></div>

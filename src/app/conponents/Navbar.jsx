@@ -29,7 +29,7 @@ export default function Test() {
     <>
     {/* navigation bar starts here  */}
 
-    <nav className='relative z-50 '> 
+    <nav className='relative z-50 md:-z-30 '> 
       <div className='z-30 md:w-full md:h-[4.1875rem] md:black md:flex md:justify-between  md:px-[2.5rem] md:items-center relative w-full bg-black h-[4.1875rem] flex justify-between items-center '>
 
        {/* logo starts */}
@@ -49,8 +49,8 @@ export default function Test() {
 
 
       {/* major large screen styling starts here  */}
-      
-      <div className='hidden md:flex md:w-full md:justify-between items-center'>
+      <div className='hidden md:block md:w-full'>
+      <div className=' md:flex md:w-full md:justify-between items-center'>
         <ul className='md:flex gap-6'>
 
           <Link href='../homepage' title='home' >
@@ -76,11 +76,13 @@ export default function Test() {
           <Image src='/code_journey 1.svg' width={54} height={57} alt='' />
         </figure>
       </div>
+      </div>
       {/* major large screen styling ends here  */}
               
       </div>
  
        {/* hamburger styling and nav links for small screens starts here  */}
+       <div className='md:hidden sm:block'>
       <ul className= {toggle ? ' z-30 fixed -top-full flex flex-col justify-center items-center h-screen text-white w-full bg-gradient-to-b from-neutral-700 to-black gap-14 transition-all duration-[1000ms]' : 'fixed top-0 flex flex-col justify-center items-center h-screen text-white w-full bg-gradient-to-b from-neutral-700 to-black gap-14 -z-10 transition-all duration-[1000ms]'}>
 
 
@@ -102,6 +104,7 @@ export default function Test() {
 
       </ul>
       {/* hamburger styling and nav links ends here  */}
+       </div>
 
 
     </nav>

@@ -120,15 +120,15 @@ const cards = projects.slice(0 , 3).map((card) => (
 
 
   return ( 
-    <main>
+    <main className='w-full md:max-w-7xl h-full md:h-full flex md:flex flex-col md:flex-col justify-center md:justify-center md:items-center items-center'>
 
 {/* Hero Section starts */}
-<section className='md:w-full w-full h-80 md:h-[32.3125rem] md:bg-slate-600 '>
+<section className='md:w-full w-full h-[50%] md:h-screen md:bg-slate-600 md:z-30 z-0 '>
 
-  <div className={`md:bg-home bg-home bg-no-repeat bg-cover w-full h-80 md:bg-no-repeat md:bg-cover md:w-full md:h-[32.3125rem] :rounded-b-2xl` }>
+  <div className={`md:bg-home bg-home bg-no-repeat bg-cover w-full h-[50%] md:bg-no-repeat md:bg-cover md:w-full md:h-screen :rounded-b-2xl` }>
 
     {/* Background with transparent overlay starts */}
-    <div className="md:relative relative md:w-full w-full h-80 md:h-[32.3125rem] md:rounded-b-2xl">
+    <div className="md:relative relative md:w-full w-full h-80 md:h-screen md:rounded-b-2xl">
       
       {/* Background overlay starts */}
       <div className="md:absolute absolute md:inset-0 inset-0 md:bg-cyan-950 bg-cyan-950 md:opacity-20 opacity-20 md:rounded-b-2xl"></div>
@@ -159,7 +159,7 @@ const cards = projects.slice(0 , 3).map((card) => (
 {/* hero section ends */}
 
 {/* main content start */}
-<section  className='md:w-full w-full h-fit  md:h-[56.93755rem] bg-stone-50 md:bg-white'>
+<section  className='md:w-full w-full h-fit  md:h-screen bg-stone-50 md:bg-white'>
     <div className='md:mx-auto mx-auto pt-14 md:pt-24 md:text-center text-center md:mb-16 mb-10 '>
       <h2 className={`md:text-cyan-950 text-cyan-950 md:text-4xl text-xl md:pb-8 pb-4 md:font-semibold font-semibold relative right-[999px] ${style.slideAnimate2} `}>
         Projects
