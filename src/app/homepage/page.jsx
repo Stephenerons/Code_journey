@@ -120,15 +120,15 @@ const cards = projects.slice(0 , 3).map((card) => (
 
 
   return ( 
-    <main className='w-full md:max-w-7xl h-full md:h-full flex md:flex flex-col md:flex-col justify-center md:justify-center md:items-center items-center'>
+    <main className='w-full md:max-w-7xl h-full md:h-1/2 flex md:flex flex-col md:flex-col justify-center md:justify-center md:items-center md:mx-auto'>
 
 {/* Hero Section starts */}
-<section className='md:w-full w-full h-[50%] md:h-screen md:bg-slate-600 md:z-30 z-0 '>
+<section className='md:w-full w-full h-[50%] md:h-1/2 md:bg-slate-600 md:z-30 z-0 '>
 
-  <div className={`md:bg-home bg-home bg-no-repeat bg-cover w-full h-[50%] md:bg-no-repeat md:bg-cover md:w-full md:h-screen :rounded-b-2xl` }>
+  <div className={`md:bg-home bg-home bg-no-repeat bg-cover w-full h-[50%] md:bg-no-repeat md:bg-cover md:w-full md:h-[35.313rem] :rounded-b-2xl` }>
 
     {/* Background with transparent overlay starts */}
-    <div className="md:relative relative md:w-full w-full h-80 md:h-screen md:rounded-b-2xl">
+    <div className="md:relative relative md:w-full w-full h-80 md:h-[35.313rem] md:rounded-b-2xl">
       
       {/* Background overlay starts */}
       <div className="md:absolute absolute md:inset-0 inset-0 md:bg-cyan-950 bg-cyan-950 md:opacity-20 opacity-20 md:rounded-b-2xl"></div>
