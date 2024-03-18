@@ -159,7 +159,7 @@ const cards = projects.slice(0 , 3).map((card) => (
 {/* hero section ends */}
 
 {/* main content start */}
-<section  className='md:w-full w-full h-fit  md:h-screen bg-stone-50 md:bg-white'>
+<section  className='md:w-full w-full h-fit  md:h-fit bg-stone-50 md:bg-white'>
     <div className='md:mx-auto mx-auto pt-14 md:pt-24 md:text-center text-center md:mb-16 mb-10 '>
       <h2 className={`md:text-cyan-950 text-cyan-950 md:text-4xl text-xl md:pb-8 pb-4 md:font-semibold font-semibold relative right-[999px] ${style.slideAnimate2} `}>
         Projects
