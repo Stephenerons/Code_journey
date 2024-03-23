@@ -120,12 +120,13 @@ const cards = projects.slice(0 , 3).map((card) => (
 
 
   return ( 
-    <main className='w-full md:max-w-7xl h-full md:h-1/2 flex md:flex flex-col md:flex-col justify-center md:justify-center md:items-center md:mx-auto'>
+    <main className='h-full md:h-1/2 flex md:flex flex-col md:flex-col justify-center md:justify-center md:items-center md:mx-auto'>
+
 
 {/* Hero Section starts */}
-<section className='md:w-full w-full h-[50%] md:h-1/2 md:bg-slate-600 md:z-30 z-0 '>
+<section className='md:w-full w-full md:max-w-7xl h-[50%] md:h-1/2 md:bg-slate-600 md:z-30 z-0 md:overflow-hidden overflow-hidden '>
 
-  <div className={`md:bg-home bg-home bg-no-repeat bg-cover w-full h-[50%] md:bg-no-repeat md:bg-cover md:w-full md:h-[35.313rem] :rounded-b-2xl` }>
+  <div className={`md:bg-home bg-home bg-no-repeat bg-cover w-full h-[50%] md:bg-no-repeat md:bg-cover md:w-full md:h-[35.313rem] ` }>
 
     {/* Background with transparent overlay starts */}
     <div className="md:relative relative md:w-full w-full h-80 md:h-[35.313rem] md:rounded-b-2xl">
@@ -134,7 +135,7 @@ const cards = projects.slice(0 , 3).map((card) => (
       <div className="md:absolute absolute md:inset-0 inset-0 md:bg-cyan-950 bg-cyan-950 md:opacity-20 opacity-20 md:rounded-b-2xl"></div>
 
       {/* Text content */}
-      <div className="md:absolute absolute md:pl-[6.25rem] pl-4 pt-14 md:pt-[7.12rem]">
+      <div className="md:absolute absolute md:pl-[6.25rem] pl-4 pt-24 md:pt-[7.12rem] ">
 
       <div className={` md:relative relative md:right-[550px] right-[550px] ${style.slideAnimate}`}>
 
@@ -159,7 +160,7 @@ const cards = projects.slice(0 , 3).map((card) => (
 {/* hero section ends */}
 
 {/* main content start */}
-<section  className='md:w-full w-full h-fit  md:h-fit bg-stone-50 md:bg-white'>
+<section  className='md:w-full w-full md:max-w-7xl h-fit  md:h-fit bg-stone-50 md:bg-white md:overflow-hidden overflow-hidden'>
     <div className='md:mx-auto mx-auto pt-14 md:pt-24 md:text-center text-center md:mb-16 mb-10 '>
       <h2 className={`md:text-cyan-950 text-cyan-950 md:text-4xl text-xl md:pb-8 pb-4 md:font-semibold font-semibold relative right-[999px] ${style.slideAnimate2} `}>
         Projects
@@ -197,7 +198,7 @@ const cards = projects.slice(0 , 3).map((card) => (
 
 
 
-<section  className='md:w-full w-full h-fit md:h-fit md:bg-white bg-stone-50 md:pb-8 '>
+<section  className='md:w-full md:max-w-7xl w-full h-fit md:h-fit md:bg-white bg-stone-50 md:pb-8 md:overflow-hidden overflow-hidden'>
   {/* parent containing div */}
   <div className='md:pt-24 pt-24 md:mx-[6.25rem] mx-4 justify-center items-center '>
 

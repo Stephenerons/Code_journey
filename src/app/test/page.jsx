@@ -100,6 +100,14 @@ export default function Test() {
     {/* navigation bar ends here  */}
 
 
+    <div className='bg-slate-500 h-20 w-fit py-4 flex  gap-3 px-4' >
+
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+    </div>
+
+
     </>
   )
 }

@@ -26,11 +26,11 @@ export default function Test() {
 
 
   return (
-    <>
+    <div className='bg-black text-white z-[1000] fixed w-full'>
     {/* navigation bar starts here  */}
 
-    <nav className='relative z-50 md:-z-30 '> 
-      <div className='z-30 md:w-full md:h-[4.1875rem] md:black md:flex md:justify-between  md:px-[2.5rem] md:items-center relative w-full bg-black h-[4.1875rem] flex justify-between items-center '>
+    <nav className='relative z-50 md:z-20 max-w-7xl mx-auto '> 
+      <div className='z-30 md:w-full md:h-[4.1875rem] md:black md:flex md:justify-between  md:px-[2.5rem] md:items-center relative w-full max-w-7xl h-[4.1875rem] flex justify-between items-center '>
 
        {/* logo starts */}
       <div className=' md:hidden px-4'>
@@ -52,17 +52,17 @@ export default function Test() {
       <div className='hidden md:block md:w-full'>
       <div className=' md:flex md:w-full md:justify-between items-center'>
         <ul className='md:flex gap-6'>
+          
 
-          <Link href='../homepage' title='home' >
+          <Link href='/homepage' title='home' >
           <li className=' md:text-center md:text-white md:text-xl md:font-medium md:hover:text-slate-400 transition-colors duration-300 focus:text-slate-400  '  >Home</li>
           </Link>
 
-
-          <Link href='../all_projects' title='projects' >
+          <Link href='/all_projects' title='projects' >
           <li className= 'md:text-center md:text-white md:text-xl md:font-medium md:hover:text-slate-400 transition-colors duration-300 focus:text-slate-400  ' >Projects</li>
           </Link>
 
-          <Link href='../about_me' title='About' >
+          <Link href='/about_me' title='About' >
           <li className= 'md:text-center md:text-white md:text-xl md:font-medium md:hover:text-slate-400 transition-colors duration-300 focus:text-slate-400  ' >About</li>
           </Link>
 
@@ -111,6 +111,6 @@ export default function Test() {
     {/* navigation bar ends here  */}
 
 
-    </>
+    </div>
   )
 }

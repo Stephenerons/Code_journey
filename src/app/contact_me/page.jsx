@@ -5,10 +5,10 @@ import { FaMessage } from "react-icons/fa6";
 
 export default function Contact() {
   return (
-    <main>
+    <main className='md:max-w-7xl md:mx-auto'>
 
     {/* parent container */}
-    <div className='py-16 md:flex md:justify-center md:items-center flex justify-center items-center mx-4'>
+    <div className='py-16 md:flex md:justify-center md:items-center flex justify-center items-center mx-4 md:h-screen h-fit'>
     {/* main container starts  */}
     <div className={`md:w-[46.1875rem] md:h-fit md:shadow-contact md:rounded-lg md:bg-slate-400 md:pb-4 pb-10 w-80 h-fit bg-slate-400 rounded-lg`}>
 

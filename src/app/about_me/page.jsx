@@ -4,7 +4,7 @@ export default function About() {
   return (
     <main className='bg-stone-50 '>
 
-    <div className=' md:bg-stone-50 bg-stone-50 h-full md:h-full'>
+    <div className=' md:bg-stone-50 bg-stone-50 h-full md:h-full md:max-w-7xl md:mx-auto'>
 
 <div className='md:px-[6.25rem] md:flex flex md:flex-row md:justify-start md:items-start flex-col justify-center items-center'>
 

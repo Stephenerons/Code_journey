@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Add the style tag for the font here */}
       </head>
-      <body className={`bg-[#fafaf9] w-full md:max-w-7xl h-full md:h-1/2 flex md:flex flex-col md:flex-col justify-center md:justify-center md:items-center md:mx-auto `}>{children}</body>
+      <body className={` md:bg-[#fafaf9]   h-full md:h-1/2 justify-center md:justify-center md:items-center md:mx-auto `}>{children}</body>
     </html>
   );
 }

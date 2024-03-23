@@ -366,22 +366,22 @@ export default function Projects() {
 
   return (  
     <main>
-    <section>
+    <section className=' md:max-w-7xl md:mx-auto '>
       <div className={`md:bg-projects bg-projects bg-no-repeat bg-cover w-full h-[50%] md:bg-no-repeat md:bg-cover md:w-full md:h-[35.313rem] md:rounded-b-2xl ` }>
 
               {/* Background with transparent overlay starts */}
-              <div className="md:relative relative w-full h-[50%]  md:w-full md:h-[35.313rem] md:rounded-b-2xl">
+              <div className="md:relative relative w-full h-[50%]   md:w-full md:h-[35.313rem] md:rounded-b-2xl">
                   
                   {/* Background overlay starts */}
                   <div className="md:absolute absolute md:inset-0 inset-0 md:bg-cyan-950 bg-cyan-950 opacity-20 md:opacity-20 md:rounded-b-2xl"></div>
 
                   {/* Text content */}
-                  <div className="md:relative relative pl-4 pt-14  md:pl-[6.25rem] md:pt-[7.12rem]">
+                  <div className="md:relative relative pl-4 pt-24 pb-14 md:pb-0  md:pl-[6.25rem] md:pt-[7.12rem]">
                     <h1 className="md:w-[33rem] md:text-white text-white md:text-5xl text-xl font-semibold md:font-semibold md:mb-6 mb-[0.81rem]">
                       <span className='md:text-slate-400 text-slate-400'>Explore</span> my works
                     </h1>
 
-                    <p className="md:w-[33rem] md:text-white md:text-base md:font-medium w-60 text-white text-sm font-normal  ">
+                    <p className="md:w-[33rem] md:text-white md:text-base md:font-medium w-60 text-white text-sm font-normal mx- ">
                     Discover my work organized into distinct categories, each offering a unique glimpse into my skills and capabilities. Whether you&apos;re interested in web development, mobile apps, design, or other specialized fields, you&apos;ll find a curated selection of projects that demonstrate my commitment to excellence and innovation.
                     </p>
                 </div>
@@ -394,7 +394,7 @@ export default function Projects() {
     </section>
 
 {/* main content starts */}
-    <section className='md:w-full w-full md:h-fit h-fit bg-stone-50 pb-[6.75rem] md:bg-white md:pb-[6.75rem] '>
+    <section className='md:w-full w-full md:max-w-7xl md:mx-auto md:h-fit h-fit bg-stone-50 pb-[6.75rem] md:bg-white md:pb-[6.75rem] '>
       <div className='md:pt-24 pt-24 mx-14 md:mx-[6.25rem] flex flex-col justify-center items-center md:flex md:justify-center md:items-center'>
       <div >
         <h2 className='md:text-black md:text-5xl md:font-semibold md:text-center text-center text-black text-xl font-semibold '>

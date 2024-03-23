@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './nav.module.css';
+import Image from 'next/image';
 
 export default function Page() {
     return (
@@ -64,5 +65,6 @@ export default function Page() {
                 </div>
             </article>
         </main>
+
     );
 }

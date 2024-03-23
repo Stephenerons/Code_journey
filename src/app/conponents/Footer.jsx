@@ -12,11 +12,12 @@ export default function Footer() {
     <footer>
     {/* parent div start */}
 
+{/*large screen parent div starts */}
     <div className='md:w-full w-full h-fit md:h-fit py-6 md:py-8 md:bg-black  hidden md:block'>
-
+      <div className=' md:max-w-7xl mx-auto'>
       {/* first sub parent start */}
 
-      <div className='md:flex md:justify-between md:items-center md:mx-[6.25rem] mx-4 md:mb-10'>
+      <div className='md:flex md:justify-between md:items-center md:mx-[6.25rem] mx-4 md:mb-10 '>
          <Link href='../homepage'>
             <div>
                 <Image width={54} height={57} src="/code_journey 1.svg" alt=''/>
@@ -42,6 +43,7 @@ export default function Footer() {
             </ul>
 
 {/* icons start*/}
+
             <div className='md:flex md:gap-[1.06rem]'>
               
               <Link href='./'>
@@ -72,7 +74,6 @@ export default function Footer() {
 
              </div>
             {/* first sub parent ends */}
-
 
             {/* second sub parent starts */}
             <div className='md:border md:border-white md:mb-10 md:mx-[6.25rem]'>
@@ -109,6 +110,11 @@ export default function Footer() {
               </div>
             </div>
             {/* Third sub parent ends */}
+
+      </div>
+
+
+
 
     </div>
 {/*large screen parent div ends */}
