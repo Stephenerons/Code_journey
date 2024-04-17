@@ -106,7 +106,7 @@ const cards = projects.slice(0 , 3).map((card) => (
             Lorem ipsum dolor sit amet consectetur. Tellus fringilla sed dictum habitasse integer tortor lacus consequat fusce. Mauris duis nunc vel malesuada faucibus convallis morbi sit. Mi urna facilisis donec in malesuada a morbi. Tellus placerat molestie enim in nascetur purus a id. Amet a a non sapien. Ut nunc pharetra et nec et. Sed aenean nisi sem faucibus hendrerit malesuada sed tincidunt ac.
             </p>
         </div>
-        {/* contents for small screens stop  */}
+{/* contents for small screens stop  */}
 
 
     </div>
@@ -124,22 +124,22 @@ const cards = projects.slice(0 , 3).map((card) => (
 
 
 {/* Hero Section starts */}
-<section className='md:w-full w-full md:max-w-7xl h-[50%] md:h-1/2 md:bg-slate-600 md:z-30 z-0 md:overflow-hidden overflow-hidden '>
+<section className='md:w-full w-full md:max-w-7xl  h-96 md:bg-slate-600 md:z-30 z-0 md:overflow-hidden overflow-hidden '>
 
-  <div className={`md:bg-home bg-home bg-no-repeat bg-cover w-full h-[50%] md:bg-no-repeat md:bg-cover md:w-full md:h-[35.313rem] ` }>
+  <div className={` md:bg-home bg-home bg-no-repeat bg-cover w-full h-96 md:bg-no-repeat md:bg-cover md:w-full md:h-[35.313rem] ` }>
 
     {/* Background with transparent overlay starts */}
-    <div className="md:relative relative md:w-full w-full h-80 md:h-[35.313rem] md:rounded-b-2xl">
+    <div className="md:relative relative md:w-full w-full h-96 md:h-[35.313rem] md:rounded-b-2xl">
       
       {/* Background overlay starts */}
       <div className="md:absolute absolute md:inset-0 inset-0 md:bg-cyan-950 bg-cyan-950 md:opacity-20 opacity-20 md:rounded-b-2xl"></div>
 
       {/* Text content */}
-      <div className="md:absolute absolute md:pl-[6.25rem] pl-4 pt-24 md:pt-[7.12rem] ">
+      <div className="md:absolute absolute md:pl-[6.25rem] pl-4 pt-24 md:pt-[7.12rem] pb-14 ">
 
-      <div className={` md:relative relative md:right-[550px] right-[550px] ${style.slideAnimate}`}>
+      <div className= {`md:relative relative md:right-[550px] right-[550px] ${style.slideAnimate}`}>
 
-        <h1 className='md:w-[33rem] w-60 md:text-white text-white md:text-5xl text-xl font-semibold  md:font-semibold md:mb-6 mb-4'>
+        <h1 className=' md:w-[33rem] w-60 md:text-white text-white md:text-5xl text-xl font-semibold  md:font-semibold md:mb-6 mb-4'>
           Captivating <span className='text-teal-300 '>Designs</span> and Seamless Functionality
         </h1>
       </div>

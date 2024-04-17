@@ -26,7 +26,7 @@ export default function Test() {
 
 
   return (
-    <div className='bg-black text-white z-[1000] fixed w-full'>
+    <div className='bg-black text-white z-50 fixed w-full'>
     {/* navigation bar starts here  */}
 
     <nav className='relative z-50 md:z-20 max-w-7xl mx-auto '> 
