@@ -124,7 +124,7 @@ const cards = projects.slice(0 , 3).map((card) => (
 
 
 {/* Hero Section starts */}
-<section className='md:w-full w-full md:max-w-7xl  h-96 md:bg-slate-600 md:z-30 z-0 md:overflow-hidden overflow-hidden '>
+<section className='md:w-full w-full md:max-w-7xl  h-96 md:h-[35.313rem] md:bg-slate-600 md:z-30 z-0 md:overflow-hidden overflow-hidden '>
 
   <div className={` md:bg-home bg-home bg-no-repeat bg-cover w-full h-96 md:bg-no-repeat md:bg-cover md:w-full md:h-[35.313rem] ` }>
 
