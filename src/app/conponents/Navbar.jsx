@@ -32,11 +32,11 @@ export default function Test() {
 
 
   return (
-    <div className='bg-black text-white z-50 top-0 sticky w-full'>
+    <div className='bg-black text-white z-50 top-0 sticky w-full md:h-[4.1875rem] h-[4.188rem]'>
     {/* navigation bar starts here  */}
 
-    <nav className='relative z-50 md:z-20 max-w-7xl mx-auto '> 
-      <div className='z-50 md:w-full md:h-[4.1875rem] md:black md:flex md:justify-between  md:px-[2.5rem] md:items-center relative w-full max-w-7xl h-[4.1875rem] flex justify-between items-center '>
+    <nav className='relative z-50 md:z-20 max-w-7xl mx-auto md:h-[4.1875rem] h-[4.188rem] '> 
+      <div className='z-50 md:w-full md:h-[4.1875rem] md:black md:flex md:justify-between  md:px-[2.5rem] md:items-center relative w-full max-w-7xl h-[4.188rem] flex justify-between items-center '>
 
        {/* logo starts */}
       <div className=' md:hidden px-4'>
