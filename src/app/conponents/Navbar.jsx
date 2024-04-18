@@ -1,32 +1,38 @@
 "use client"
 import Image from 'next/image'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 
 export default function Test() {
   const [toggle, setToggle] = useState(true);
 
-  const [active, setActive] = useState('home')
+  const [active, setActive] = useState('')
+
+  const router = useRouter()
+  useEffect(() => {
+
+    setActive(router.pathname);
+  }, [router.pathname]);
 
   const change = () => {
-    setToggle(prevtoggle => !prevtoggle)
+    setToggle(prevtoggle => !prevtoggle);
+  };
 
-  }
- 
   const state = (e) => {
-    e !== active ? setActive(e) : null;
-  } 
+    setActive(e);
+  };
 
 
-  
+  console.log(active)
 
 
 
   return (
-    <div className='bg-black text-white z-50 fixed w-full'>
+    <div className='bg-black text-white z-50 top-0 sticky w-full'>
     {/* navigation bar starts here  */}
 
     <nav className='relative z-50 md:z-20 max-w-7xl mx-auto '> 
@@ -87,19 +93,19 @@ export default function Test() {
 
 
         <Link href='./homepage'>
-        <li onClick= { () => state('home')} className={active === 'home' ? 'text-slate-400 text-4xl font-medium' : 'text-white text-2xl font-medium'}>Home</li>
+        <li onClick= { () => state('home')} className={active === '/homepage' ? 'text-slate-400 text-4xl font-medium' : 'text-white text-2xl font-medium'}>Home</li>
         </Link>
 
         <Link  href='./all_projects'>
-        <li onClick= { () => state('project')} className={active === 'project' ? 'text-slate-400 text-4xl font-medium ' : 'text-white text-2xl font-medium'}>Projects</li>
+        <li onClick= { () => state('project')} className={active === '/all_projects' ? 'text-slate-400 text-4xl font-medium ' : 'text-white text-2xl font-medium'}>Projects</li>
         </Link>
 
         <Link  href='./about_me'>
-        <li onClick= { () => state('about')} className={active === 'about' ? 'text-slate-400 text-4xl font-medium' : ' text-white text-2xl font-medium '}>About</li>
+        <li onClick= { () => state('about')} className={active === '/about_me' ? 'text-slate-400 text-4xl font-medium' : ' text-white text-2xl font-medium '}>About</li>
         </Link>
 
         <Link   href='./contact_me'>
-        <li onClick = { () => state('contact')} className={active === 'contact' ? 'text-slate-400 text-4xl font-medium ' : ' text-white text-2xl font-medium '}>Contact</li>
+        <li onClick = { () => state('contact')} className={active === '/contact_me' ? 'text-slate-400 text-4xl font-medium ' : ' text-white text-2xl font-medium '}>Contact</li>
         </Link>
 
       </ul>
