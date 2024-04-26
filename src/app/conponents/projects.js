@@ -4,48 +4,62 @@ const projects = [
       "id": 1,
       "key": 1,
       "project_title": "Project 1",
-      "subtitle": "Code Journey",
+      "subtitle": "Doggo",
       "major_category": "Frontend",
       "category_1": "web",
-      "category_2": "Design",
-      "category_3": "JSON",
-      "image":  "/card_image.jpg"
+      "category_2": "JSON",
+      "category_3": "Design",
+      "image":  "/project_images/no_image.png",
+      "mobile_writeup":  "Embark on a mesmerizing Code Journey! Dive into a realm where lines of code weave magic, turning dreams into digital reality. With a passion for innovation and an eye for detail, Code Journey is your gateway to captivating user experiences and groundbreaking solutions. From sleek web designs to robust applications, every project is a testament to creativity and technical prowess. Join me on this exhilarating journey of turning ideas into impactful digital experiences. Let's craft the future, one line of code at a time!",
+      "technologies" : [
+        "Tailwind Css",
+        "Css3",
+        "Html",
+        "Next.js",
+      ],
+      "process_and_approach" : "Begin by thoroughly understanding the requirements , Identify the key objectives, target audience, and desired outcomes for the frontend mentor task. Translating the wireframes and mockups into actual design implementations using HTML, CSS, and JavaScript, also ensuring consistency across different screen sizes and devices.. Lastly, thoroughly test the frontend mentor task across multiple browsers and devices to ensure cross-browser compatibility and responsiveness. Conduct usability testing to gather feedback from potential users and identify any usability issues. ",
+      "research_phase": "Requirements were given out by the task to achieve the closest replica ",
+      "Development_phase": "Development commenced with the use of next.js and its sub-languages",
+      "Design_phase": "Aside given properties such as images and others, a prototype was built using figma",
+
     },
   
     {
         "id": 2,
         "key": 2,
-        "project_title": "Project 2",
-        "subtitle": "lorem ipsum dolor amet sit",
+        "project_title": "Project 4",
+        "subtitle": "Simple Ui",
         "major_category": "Frontend",
         "category_1": "web",
-        "category_2": "Api",
         "category_3": "Design",
-        "image":  "/card_image.jpg"
+        "mobile_writeup":  "A simple design page gotten from frontend mentor.io. The task was to replicate a design page with some giving properties using html and css",
+        "image":  "/project_images/simple_ui_image.jpg",
+
     },
   
     {
         "id": 3,
         "key": 3,
         "project_title": "Project 3",
-        "subtitle": "lorem ipsum dolor amet sit",
+        "subtitle": "Calculator",
         "major_category": "Frontend",
         "category_1": "Design",
-        "category_2": "Api",
-        "category_3": "interactive",
-        "image":  "/card_image.jpg"
+        "category_2": "Web",
+        "mobile_writeup":  "A simple captivating calculator web app with basic and some advanced functions",
+        "image":  "/project_images/no_image.png",
     },
   
     {
         "id": 4,
         "key": 4,
         "project_title": "Project 4",
-        "subtitle": "lorem ipsum dolor amet sit",
-        "major_category": "Backend",
+        "subtitle": "Code journey",
+        "major_category": "Frontend",
         "category_1": "web",
-        "category_2": "UiUx",
+        "category_2": "Json",
         "category_3": "Design",
-        "image":  "/card_image.jpg"
+        "mobile_writeup":  "Welcome to Code Journey, where every line of code is a step toward innovation and creativity. Embark on an exhilarating adventure through the digital realm, where dreams become reality with the stroke of a keyboard. Discover captivating projects, from sleek designs to groundbreaking applications, each a testament to our passion for crafting memorable user experiences.",
+        "image":  "/project_images/no_image.png",
     },
   
     {
@@ -57,7 +71,7 @@ const projects = [
         "category_1": "Design",
         "category_2": "Api",
         "category_3": "interactive",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
   
     {
@@ -69,7 +83,7 @@ const projects = [
         "category_1": "Design",
         "category_2": "Api",
         "category_3": "interactive",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
   
     {
@@ -81,7 +95,7 @@ const projects = [
         "category_1": "web",
         "category_2": "Design",
         "category_3": "Piece",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
   
     {
@@ -93,7 +107,7 @@ const projects = [
         "category_1": "web",
         "category_2": "Design",
         "category_3": "Development",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
 
     {
@@ -105,7 +119,7 @@ const projects = [
         "category_1": "web",
         "category_2": "Design",
         "category_3": "Development",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
 
     {
@@ -117,7 +131,7 @@ const projects = [
         "category_1": "web",
         "category_2": "Design",
         "category_3": "Development",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
 
     {
@@ -129,7 +143,7 @@ const projects = [
         "category_1": "web",
         "category_2": "Design",
         "category_3": "Development",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
   
     {
@@ -141,7 +155,7 @@ const projects = [
         "category_1": "web",
         "category_2": "Design",
         "category_3": "Development",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
 
     {
@@ -153,7 +167,7 @@ const projects = [
         "category_1": "Design",
         "category_2": "Api",
         "category_3": "interactive",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     }, 
 
     {
@@ -165,7 +179,7 @@ const projects = [
         "category_1": "Design",
         "category_2": "Api",
         "category_3": "interactive",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
 
     {
@@ -177,7 +191,7 @@ const projects = [
         "category_1": "Design",
         "category_2": "Api",
         "category_3": "interactive",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
 
     {
@@ -189,7 +203,7 @@ const projects = [
         "category_1": "Design",
         "category_2": "Api",
         "category_3": "interactive",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
 
     {
@@ -201,7 +215,7 @@ const projects = [
         "category_1": "Design",
         "category_2": "Api",
         "category_3": "interactive",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     },
 
     {
@@ -213,7 +227,7 @@ const projects = [
         "category_1": "Design",
         "category_2": "Api",
         "category_3": "interactive",
-        "image":  "/card_image.jpg"
+        "image":  "/project_images/no_image.png",
     }
 
   ]

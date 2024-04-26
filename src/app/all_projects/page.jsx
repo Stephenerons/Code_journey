@@ -3,6 +3,7 @@ import React , {useState} from 'react'
 import projects from '../conponents/projects'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function Projects() {
 
@@ -21,8 +22,13 @@ export default function Projects() {
 <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
-<div className={`md:bg-home bg-home md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:h-48 h-40 md:w-[21.5rem] md:rounded-t-lg rounded-t-lg md:bg-black`}>
-</div>
+<Image
+  src={front.image}
+  width={344} // Adjust the width as needed
+  height={192} // Adjust the height as needed
+  alt="Image Description"
+  className="md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:w-[344px] md:h-[192px] md:rounded-t-lg rounded-t-lg md:bg-black"
+/>
 {/* image hero end */}
 
 
@@ -109,8 +115,13 @@ export default function Projects() {
 <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
-<div className={`md:bg-home bg-home md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:h-48 h-40 md:w-[21.5rem] md:rounded-t-lg rounded-t-lg md:bg-black`}>
-</div>
+<Image
+  src={back.image}
+  width={344} // Adjust the width as needed
+  height={192} // Adjust the height as needed
+  alt="Image Description"
+  className="md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:w-[344px] md:h-[192px] md:rounded-t-lg rounded-t-lg md:bg-black"
+/>
 {/* image hero end */}
 
 
@@ -197,8 +208,13 @@ export default function Projects() {
 <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
-<div className={`md:bg-home bg-home md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:h-48 h-40 md:w-[21.5rem] md:rounded-t-lg rounded-t-lg md:bg-black`}>
-</div>
+<Image
+  src={product.image}
+  width={344} // Adjust the width as needed
+  height={192} // Adjust the height as needed
+  alt="Image Description"
+  className="md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:w-[344px] md:h-[192px] md:rounded-t-lg rounded-t-lg md:bg-black"
+/>
 {/* image hero end */}
 
 
@@ -283,8 +299,13 @@ export default function Projects() {
   <Link  href={`/all_projects/${single.project_title.split(' ').join('-')}`}>
 
 {/* image hero start */}
-<div className={`md:bg-home bg-home md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:h-48 h-40 md:w-[21.5rem] md:rounded-t-lg rounded-t-lg md:bg-black`}>
-</div>
+<Image
+  src={single.image}
+  width={344} // Adjust the width as needed
+  height={192} // Adjust the height as needed
+  alt="Image Description"
+  className="md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:w-[344px] md:h-[192px] md:rounded-t-lg rounded-t-lg md:bg-black"
+/>
   
 {/* image hero end */}
 

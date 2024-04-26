@@ -10,6 +10,7 @@ export default function page({params}) {
         <main>
         <section>
               <div className= {`md:bg-singlePage bg-singlePage md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:w-full w-full h-80  md:h-[35.3125rem] md:rounded-b-2xl ` }>
+                
         
                       {/* Background with transparent overlay starts */}
                       <div className="md:relative relative w-full h-80 md:w-full md:h-[35.3125rem] md:rounded-b-2xl">
@@ -20,7 +21,7 @@ export default function page({params}) {
                           {/* Text content */}
                           <div className="md:relative relative pl-4 pt-14 md:pl-[6.25rem] md:pt-[10rem]">
                             <h1 className="md:w-[33rem] md:text-white md:text-5xl md:font-semibold md:mb-6 mb-6 text-slate-400 text-xl font-semibold ">
-                             {project.project_title}
+                             {project.subtitle}
                             </h1>
         
                             <div className='md:w-72 w-fit h-6 md:flex gap-2 md:h-8 flex md:gap-2.5   '>
@@ -69,7 +70,7 @@ export default function page({params}) {
                 </h2>
         
                 <p className='md:text-black md:text-base md:font-light md:mt-14 text-black text-xs font-light  mt-6 text-center'>
-                Lorem ipsum dolor sit amet consectetur. Tristique eget diam semper placerat. Tincidunt praesent lorem lectus at morbi in a habitasse. Odio turpis neque vitae suscipit vel vestibulum. Vitae egestas cras aliquam quis risus pulvinar tincidunt tincidunt dui. Velit nec egestas egestas enim velit cum turpis mattis. Sed sodales id in ac vestibulum. Elementum bibendum purus faucibus commodo arcu sit interdum donec duis. Scelerisque commodo urna risus arcu convallis lacus habitant eu. Arcu semper cursus scelerisque in purus lacus arcu.
+                {project.mobile_writeup}
                 </p>
               </div>
               </div>
@@ -84,7 +85,7 @@ export default function page({params}) {
                   </h2>
                   
                   <p className='md:mt-4 md:text-black md:text-start md:w-[33rem]  md:text-base md:font-light text-black text-xs font-light text-center md:pr-4 pr-0  '>
-                  Lorem ipsum dolor sit amet consectetur. Tristique eget diam semper placerat. Lorem ipsum dolor sit amet consectetur. Tristique eget diam semper placerat. Lorem ipsum dolor sit amet consectetur. Tristique eget diam semper placerat. Lorem ipsum dolor sit amet consectetur. Tristique eget diam semper placerat
+                  {project.process_and_approach}
                   </p>
                 </div>
            {/* container div 1 ends */}
@@ -95,9 +96,9 @@ export default function page({params}) {
                   Problems
                 </h2>
         
-                  <p className='md:mt-4 mt-4  text-black text-sm font-normal '><span className='md:text-black md:text-xl  md:font-medium md:mt-4 text-cyan-950 text-sm font-medium '>Research Phase :</span>  Lorem ipsum dolor sit amet consectetur. Tristique eget diam semper placerat. </p>
-                  <p className='md:mt-6 mt-4 text-black text-sm font-normal'><span className='md:text-black md:text-xl md:font-medium text-cyan-950 text-sm font-medium '>Design Phase :</span> Lorem ipsum dolor sit amet consectetur. Tristique eget diam semper placerat. </p>
-                  <p className='md:mt-6 md:mb-14 mt-4 text-black text-sm font-normal' ><span className='md:text-black md:text-xl md:font-medium md:mt-6 text-cyan-950 text-sm font-medium '>Development Phase :</span> Lorem ipsum dolor sit amet consectetur. Tristique eget diam semper placerat. </p>
+                  <p className='md:mt-4 mt-4  text-black text-sm font-normal '><span className='md:text-black md:text-xl  md:font-medium md:mt-4 text-cyan-950 text-sm font-medium '>Research Phase :</span> {project.research_phase}</p>
+                  <p className='md:mt-6 mt-4 text-black text-sm font-normal'><span className='md:text-black md:text-xl md:font-medium text-cyan-950 text-sm font-medium '>Design Phase :</span>{project.Design_phase} </p>
+                  <p className='md:mt-6 md:mb-14 mt-4 text-black text-sm font-normal' ><span className='md:text-black md:text-xl md:font-medium md:mt-6 text-cyan-950 text-sm font-medium '>Development Phase :</span> {project.Development_phase}</p>
         
                 </div>
             {/* container div 2 ends */}
@@ -120,31 +121,12 @@ export default function page({params}) {
                   <div className=' md:mt-14 mt-6 '>
                     <p className='md:text-black md:text-base md:font-normal text-black text-xs font-normal  '><span className='md:text-slate-400 md:text-xl md:font-medium text-slate-400 text-sm font-medium  '>Frontend :</span> Below are a list of frontend technologies used .</p>
                     <ul className=''>
-                      <li className='md:pt-4 pt-4 md:text-black md:text-base md:font-normal text-black text-xs font-normal'>Tailwind Css</li>
+                      <li className='md:pt-4 pt-4 md:text-black md:text-base md:font-normal text-black text-xs font-normal'></li>
                       <li className='md:py-4 py-4 md:text-black md:text-base md:font-normal text-black text-xs font-normal' >Html</li>
                       <li className='md:text-black md:text-base md:font-normal text-black text-xs font-normal'>Next js</li>
                     </ul>
                   </div>
-        
-                  <div className='md:mt-8 mt-4'>
-                    <p className='md:text-black md:text-base md:font-normal text-black text-xs font-normal '><span className='md:text-slate-400 md:text-xl md:font-medium md:mt-8 text-slate-400 text-sm font-medium '>Frontend :</span> Below are a list of frontend technologies used .</p>
-                    <ul className='list-item'>
-                      <li className='md:pt-4 pt-4 md:text-black md:text-base md:font-normal text-black text-xs font-normal'>Tailwind Css</li>
-                      <li className='md:py-4 py-4 md:text-black md:text-base md:font-normal text-black text-xs font-normal' >Html</li>
-                      <li className='md:text-black md:text-base md:font-normal text-black text-xs font-normal' >Next js</li>
-                    </ul>
-                  </div>
-        
-                  <div className='md:mt-8 mt-4'>
-                    <p className='md:text-black md:text-base md:font-normal text-black text-xs font-normal '><span className='md:text-slate-400 md:text-xl md:font-medium md:mt-8 text-slate-400 text-sm font-medium '>Frontend :</span> Below are a list of frontend technologies used .</p>
-                    <ul className=''>
-                      <li className='md:pt-4 pt-4 md:text-black md:text-base md:font-normal text-black text-xs font-normal'>Tailwind Css</li>
-                      <li className='md:py-4 py-4 md:text-black md:text-base md:font-normal text-black text-xs font-normal' >Html</li>
-                      <li className='md:text-black md:text-base md:font-normal text-black text-xs font-normal' >Next js</li>
-                    </ul>
-                  </div>
-        
-                  
+    
                   </div>
         
                   <div className='md:mt-14 mt-14 flex justify-center items-center md:flex md:justify-center md:items-center '>

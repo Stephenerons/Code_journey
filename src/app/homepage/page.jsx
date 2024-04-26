@@ -35,8 +35,14 @@ const cards = projects.slice(0 , 3).map((card) => (
   <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
-<div className={`md:bg-home bg-home md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:h-48 h-40 md:w-[21.5rem] md:rounded-t-lg rounded-t-lg md:bg-black`}>
-</div>
+
+<Image
+  src={card.image}
+  width={344} // Adjust the width as needed
+  height={192} // Adjust the height as needed
+  alt="Image Description"
+  className="md:bg-no-repeat bg-no-repeat md:bg-cover bg-cover md:w-[344px] md:h-[192px] md:rounded-t-lg rounded-t-lg md:bg-black"
+/>
 {/* image hero end */}
 
 
