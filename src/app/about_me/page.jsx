@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function About() {
@@ -12,13 +13,14 @@ export default function About() {
         {/* image start large screen*/}
         <div className='md:w-1/2 md:flex md:justify-center md:mt-[5.5rem] text-center '>
             {/* back */}
-            <div className={`md:w-[27.25rem] md:h-[27.125rem] md:bg-neutral-400 md:rounded-md md:relative mr-[4.12rem] md:shadow-about`}>
+            <div className={`md:w-[27.25rem] md:h-[27.125rem] md:bg-black md:rounded-md md:relative mr-[4.12rem] md:shadow-about`}>
 
             </div>
 
 
             {/* front*/}
-            <div className='md:absolute md:bg-black md:w-[27.25rem] md:h-[27.125rem] md:rounded-md md:  '>
+            <div className='md:absolute  md:w-[27.25rem] md:h-[27.125rem] md:rounded-md md:  '>
+                <Image   src="/my_pic.jpg" width={768}  height={768} alt="My image" className='bg-no-repeat md:bg-cover md:w-[27.25rem] md:h-[27.125rem]' />
 
             </div>
 

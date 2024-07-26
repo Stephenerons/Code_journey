@@ -18,7 +18,7 @@ export default function Projects() {
   const filteredFrontend = projects.filter( project => project.major_category === 'Frontend')
   
   const frontEnd = filteredFrontend.map((front) => (
- <Link key={front.id} href={`/all_projects/${front.project_title.split(' ').join('-')}`}>
+ <Link key={front.id} href= {front.link} target='_blank'>
 <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
@@ -74,18 +74,21 @@ export default function Projects() {
 
       {/* div containing view project button and arrow icon starts */}
 
+      <a href={front.link}target="_blank" rel="noopener noreferrer" className="flex items-center">
+        <div className='md:flex  '>
+          <button>
+            <p className='text-slate-400 text-sm font-normal'>
+              View Project
+            </p>
+          </button>
 
-      <div className='md:flex  '>
-        <button>
-          <p className='text-slate-400 text-sm font-normal'>
-            View Project
-          </p>
-        </button>
+          <span className='text-center'>
+          <MdOutlineKeyboardArrowRight />
+          </span>
+        </div>
+      </a>
 
-        <span className='text-center'>
-        <MdOutlineKeyboardArrowRight />
-        </span>
-      </div>
+
 
      {/* div containing view project button and arrow icon ends */}
 
@@ -95,7 +98,7 @@ export default function Projects() {
         {/* contents for small screens starts  */}
         <div className='md:hidden px-4 text-center'>
             <p className=' text-zinc-900 text-xs font-normal '>
-            Lorem ipsum dolor sit amet consectetur. Tellus fringilla sed dictum habitasse integer tortor lacus consequat fusce. Mauris duis nunc vel malesuada faucibus convallis morbi sit. Mi urna facilisis donec in malesuada a morbi. Tellus placerat molestie enim in nascetur purus a id. Amet a a non sapien. Ut nunc pharetra et nec et. Sed aenean nisi sem faucibus hendrerit malesuada sed tincidunt ac.
+              Lorem ipsum dolor sit amet consectetur. Tellus fringilla sed dictum habitasse integer tortor lacus consequat fusce. Mauris duis nunc vel malesuada faucibus convallis morbi sit. Mi urna facilisis donec in malesuada a morbi. Tellus placerat molestie enim in nascetur purus a id. Amet a a non sapien. Ut nunc pharetra et nec et. Sed aenean nisi sem faucibus hendrerit malesuada sed tincidunt ac.
             </p>
         </div>
         {/* contents for small screens stop  */}
@@ -111,7 +114,7 @@ export default function Projects() {
 
   const backEnd = filteredBackend.map((back) => (
 
-<Link key={back.id} href={`/all_projects/${back.project_title.split(' ').join('-')}`}>
+<Link key={back.id} href= {back.link} target='_blank'>
 <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
@@ -204,7 +207,7 @@ export default function Projects() {
 
   const fullstack = filteredFullStack.map((product) => (
 
-<Link key={product.id} href={`/all_projects/${product.project_title.split(' ').join('-')}`}> 
+<Link key={product.id} href= {product.link} target='_blank' > 
 <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
@@ -295,8 +298,8 @@ export default function Projects() {
 
   const allCards = projects.map((single) => (
 
-<article key={single.id} className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
-  <Link  href={`/all_projects/${single.project_title.split(' ').join('-')}`}>
+<article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
+  <Link key={single.id} href= {single.link} target='_blank'>
 
 {/* image hero start */}
 <Image
@@ -403,7 +406,7 @@ export default function Projects() {
                     </h1>
 
                     <p className="md:w-[33rem] md:text-white md:text-base md:font-medium w-60 text-white text-sm font-normal mx- ">
-                    Discover my work organized into distinct categories, each offering a unique glimpse into my skills and capabilities. Whether you&apos;re interested in web development, mobile apps, design, or other specialized fields, you&apos;ll find a curated selection of projects that demonstrate my commitment to excellence and innovation.
+                        Discover my work organized into distinct categories, each offering a unique glimpse into my skills and capabilities. Whether you&apos;re interested in web development, mobile apps, design, or other specialized fields, you&apos;ll find a curated selection of projects that demonstrate my commitment to excellence and innovation.
                     </p>
                 </div>
 

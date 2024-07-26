@@ -46,28 +46,23 @@ export default function Footer() {
 
             <div className='md:flex md:gap-[1.06rem]'>
               
-              <Link href='./'>
-                <div>
-                <FaGithub className='md:w-4 md:h-4 md:text-white' />
-                </div>
-                </Link>
+            <Link target='_blank' href='https://github.com/Stephenerons'>
+          <div>
+          <FaGithub className='md:w-4 md:h-4 text-white' />
+          </div>
+          </Link>
 
-                <Link href='./'>
-                <div><FcGoogle className='md:w-4 md:h-4' />
-                </div>
-                </Link>
+          <Link target='_blank' href='google.com'>
+          <div><FcGoogle className='md:w-4 md:h-4' />
+          </div>
+          </Link>
 
-                <Link href='./'>
-                <div>
-                <BsLinkedin className='md:w-4 md:h-4 text-white md:hover:text-sky-600 transition-colors duration-300' />
-                </div>
-                </Link>
+          <Link target='_blank' href='https://www.linkedin.com/in/momoh-eromosele/'>
+          <div>
+          <BsLinkedin className='md:w-4 md:h-4 rounded-sm bg-sky-600 ' />
+          </div>
+          </Link>
 
-                <Link href='./'>
-                <div>
-                <BsInstagram  className='md:w-4 md:h-4 md:bg-white md:hover:bg-gradient-to-br from-indigo-600 via-rose-500 to-fuchsia-600 rounded-md transition-all duration-300'/>
-                </div>
-                </Link>
               
             </div>
             {/* icons end */}
@@ -140,28 +135,23 @@ export default function Footer() {
 {/* icons start*/}
       <div className='md:flex md:gap-[1.06rem] flex gap-5'>
         
-        <Link href='./'>
+        <Link target='_blank' href='https://github.com/Stephenerons'>
           <div>
           <FaGithub className='md:w-4 md:h-4 text-white' />
           </div>
           </Link>
 
-          <Link href='./'>
+          <Link target='_blank' href='google.com'>
           <div><FcGoogle className='md:w-4 md:h-4' />
           </div>
           </Link>
 
-          <Link href='./'>
+          <Link target='_blank' href='https://www.linkedin.com/in/momoh-eromosele/'>
           <div>
-          <BsLinkedin className='md:w-4 md:h-4 rounded-sm text-sky-600 bg-white' />
+          <BsLinkedin className='md:w-4 md:h-4 rounded-sm bg-sky-600 ' />
           </div>
           </Link>
 
-          <Link href='./'>
-          <div>
-          <BsInstagram  className=' md:w-4 md:h-4 bg-gradient-to-br from-indigo-600 via-rose-500 to-fuchsia-600 rounded-md'/>
-          </div>
-          </Link>
         
       </div>
       {/* icons end */}

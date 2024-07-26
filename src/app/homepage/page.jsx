@@ -31,7 +31,7 @@ export default function Homepage() {
 
 const cards = projects.slice(0 , 3).map((card) => (
 
-<Link key={card.id} href= {`/homepage/${card.project_title.split(' ').join('-')}`}>
+<Link key={card.id} href= {card.link} target='_blank'>
   <article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
 
 {/* image hero start */}
@@ -47,7 +47,7 @@ const cards = projects.slice(0 , 3).map((card) => (
 
 
 {/* card contents large screen and small screen start  */}
-    <div className='md:w-80 md:h-56 w-80 h-64 '>
+    <div className='md:w-80 md:h-40 w-80 h-64 '>
       <div className='md:mt-8 mt-8 md:w-fit w-80 md:p-3 p-3'>
 
         <h2 className='md:text-cyan-950 text-zinc-900 text-lg font-semibold md:text-xl md:font-semibold md:mb-2  text-center md:text-start'>
@@ -64,7 +64,7 @@ const cards = projects.slice(0 , 3).map((card) => (
 
       <div className='md:p-3 hidden md:block'>
 
-      <div className='md:mb-10 md:flex md:gap-2'>
+     <div className='md:mb-10 md:flex md:gap-2'>
         <div className='md:w-fit md:h-6 md:p-1 md:bg-slate-400 md:rounded-md md:flex md:justify-center md:items-center md:gap-2.5'>
           <p className=' md:text-sm md:font-normal md:text-white md:text-center '>
             {card.category_1}
@@ -88,18 +88,7 @@ const cards = projects.slice(0 , 3).map((card) => (
 
       {/* div containing view project button and arrow icon starts */}
 
-
-      <div className='md:flex '>
-        <button>
-          <p className='text-slate-400 text-sm font-normal'>
-            View Project
-          </p>
-        </button>
-
-        <span className=' md:my-auto'>
-        <MdOutlineKeyboardArrowRight />
-        </span>
-      </div>
+      
 
      {/* div containing view project button and arrow icon ends */}
 
@@ -109,7 +98,7 @@ const cards = projects.slice(0 , 3).map((card) => (
         {/* contents for small screens starts  */}
         <div className='md:hidden px-4 text-center'>
             <p className=' text-zinc-900 text-xs font-normal '>
-            Lorem ipsum dolor sit amet consectetur. Tellus fringilla sed dictum habitasse integer tortor lacus consequat fusce. Mauris duis nunc vel malesuada faucibus convallis morbi sit. Mi urna facilisis donec in malesuada a morbi. Tellus placerat molestie enim in nascetur purus a id. Amet a a non sapien. Ut nunc pharetra et nec et. Sed aenean nisi sem faucibus hendrerit malesuada sed tincidunt ac.
+              Lorem ipsum dolor sit amet consectetur. Tellus fringilla sed dictum habitasse integer tortor lacus consequat fusce. Mauris duis nunc vel malesuada faucibus convallis morbi sit. Mi urna facilisis donec in malesuada a morbi. Tellus placerat molestie enim in nascetur purus a id. Amet a a non sapien. Ut nunc pharetra et nec et. Sed aenean nisi sem faucibus hendrerit malesuada sed tincidunt ac.
             </p>
         </div>
 {/* contents for small screens stop  */}
