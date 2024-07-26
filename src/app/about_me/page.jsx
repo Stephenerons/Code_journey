@@ -25,7 +25,7 @@ export default function About() {
             </div>
 
         </div>
-        {/* image ends large creen */}
+        {/* image ends large screen */}
 
         <div className='md:w-1/2 mx-4 text-center '>
             <div className='mt-8 '>
