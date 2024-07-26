@@ -298,8 +298,8 @@ export default function Projects() {
 
   const allCards = projects.map((single) => (
 
-<article className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
-  <Link key={single.id} href= {single.link} target='_blank'>
+<article key={single.id} className='md:w-[21.5rem] w-80 h-fit rounded-lg shadow-cards md:h-fit md:rounded-lg md:shadow-cards'>
+  <Link  href= {single.link} target='_blank'>
 
 {/* image hero start */}
 <Image
